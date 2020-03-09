@@ -1,8 +1,6 @@
-include CHANGES.rst
-include CONTRIBUTING.rst
-include tox.ini
-graft artwork
-graft docs
-prune docs/_build
-graft examples
+include LICENSE
+include flaskr/schema.sql
+graft flaskr/static
+graft flaskr/templates
 graft tests
+global-exclude *.pyc
